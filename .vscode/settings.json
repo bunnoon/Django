@@ -1,9 +1,19 @@
 {
     "python.analysis.typeCheckingMode": "basic",
     "[python]": {
-        "diffEditor.ignoreTrimWhitespace": false,
+        "editor.wordBasedSuggestions": false,
+        "editor.rulers": [
+            80,
+            120
+        ],
         "editor.formatOnSave": true,
         "editor.defaultFormatter": "ms-python.autopep8",
-        "editor.wordBasedSuggestions": false
+        "diffEditor.ignoreTrimWhitespace": false,
+    },
+    "[git-commit]": {
+        "workbench.editor.restoreViewState": false,
+        "editor.rulers": [
+            50
+        ],
     }
 }
