@@ -3,7 +3,7 @@
 
 # python cache
 __pycache__/
-static/
+*/static
 
 # database files
 *.sqlite3
