@@ -1,0 +1,90 @@
+- model: genres.genre
+  pk: 1
+  fields:
+    handle: adventure
+    enName: Adventure
+    thName: ผจญภัย
+
+- model: genres.genre
+  pk: 2
+  fields:
+    handle: action
+    enName: Action
+    thName: การต่อสู้
+
+- model: genres.genre
+  pk: 3
+  fields:
+    handle: comedy
+    enName: Comedy
+    thName: ตลก
+
+- model: genres.genre
+  pk: 4
+  fields:
+    handle: slice-of-life
+    enName: Slice of Life
+    thName: ชีวิตประจำวัน
+    
+- model: genres.genre
+  pk: 5
+  fields:
+    handle: drama
+    enName: Drama
+    thName: ดราม่า
+
+- model: genres.genre
+  pk: 6
+  fields:
+    handle: fantasy
+    enName: Fantasy
+    thName: แฟนตาซี
+
+- model: genres.genre
+  pk: 7
+  fields:
+    handle: supernatural
+    enName: Supernatural
+    thName: สิ่งเหนือธรรมชาติ
+
+- model: genres.genre
+  pk: 8
+  fields:
+    handle: magic
+    enName: Magic
+    thName: เวทมนต์
+
+- model: genres.genre
+  pk: 9
+  fields:
+    handle: Mystery
+    enName: mystery
+    thName: ลึกลับ
+
+- model: genres.genre
+  pk: 10
+  fields:
+    handle: horror
+    enName: Horror
+    thName: สยองขวัญ
+
+- model: genres.genre
+  pk: 11
+  fields:
+    handle: psychological
+    enName: Psychological
+    thName: จิตวิทยา
+
+- model: genres.genre
+  pk: 12
+  fields:
+    handle: sci-fi
+    enName: Sci-Fi
+    thName: ก้าวข้ามวิทยาศาตร์
+
+- model: genres.genre
+  pk: 13
+  fields:
+    handle: romance
+    enName: Romance
+    thName: รักโรแมนติก
