@@ -103,6 +103,12 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 
+# List of directories searched for fixture files
+# https://docs.djangoproject.com/en/4.2/ref/settings/#std-setting-FIXTURE_DIRS
+
+FIXTURE_DIRS = [BASE_DIR / 'fixtures']
+
+
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/
 
