@@ -3,5 +3,10 @@
 {% block content %}
 <main>
   <h1>View Anime Template</h1>
+  {% if success %}
+    <h2>{{ data.thName }} ({{ data.enName }})</h2>
+  {% endif %}
+  <p>StatusCode: {{ status }}</p>
+  <p>Success: {{ success }}</p>
 </main>
 {% endblock %}

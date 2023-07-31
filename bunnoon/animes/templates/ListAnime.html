@@ -3,5 +3,15 @@
 {% block content %}
 <main>
   <h1>List Anime Template</h1>
+  {% if success %}
+    {% for anime in data %}
+      <a href="{{ anime.animePk }}/{{ anime.title }}">
+        {{ anime.thName }} ({{ anime.enName }})
+      </a>
+      <br>
+    {% endfor %}
+  {% endif %}
+  <p>StatusCode: {{ status }}</p>
+  <p>Success: {{ success }}</p>
 </main>
 {% endblock %}
