@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-2!8@xbkh$wddsq(d4rhu0^+rx*9i^w06!3mk%t@5rjrozzlk9l
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -37,12 +37,14 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'general',
+    'rest_framework',
+    'corsheaders',
     'genres',
     'animes',
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -57,7 +59,7 @@ ROOT_URLCONF = 'bunnoon.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'templates'],
+        'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -103,6 +105,12 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 
+# Cross-Origin Resource Sharing (CORS)
+# https://github.com/adamchainz/django-cors-headers
+
+CORS_ALLOWED_ORIGINS = []
+
+
 # List of directories searched for fixture files
 # https://docs.djangoproject.com/en/4.2/ref/settings/#std-setting-FIXTURE_DIRS
 
@@ -126,9 +134,7 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
-# STATIC_ROOT = BASE_DIR / 'static'     # (Optional) Deploy static files.
-
-STATICFILES_DIRS = [BASE_DIR / 'static']
+STATIC_ROOT = BASE_DIR / 'static'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field

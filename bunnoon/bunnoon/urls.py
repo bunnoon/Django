@@ -16,10 +16,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from rest_framework.routers import DefaultRouter
+
+# Register your apis router here.
+router = DefaultRouter()
+
 
 urlpatterns = [
-    path('', include('general.urls')),
-    path('animes/', include('animes.urls')),
-    path('genres/', include('genres.urls')),
+    path('api/', include(router.urls)),
     path('admin/', admin.site.urls),
 ]
