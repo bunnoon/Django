@@ -17,9 +17,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
+from animes.views import AnimeDetailViewSet
 
 # Register your apis router here.
 router = DefaultRouter()
+router.register('animes/detail', AnimeDetailViewSet, 'anime_detail')
 
 
 urlpatterns = [
